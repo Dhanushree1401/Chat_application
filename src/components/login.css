@@ -1,0 +1,175 @@
+/* 🔹 Background */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    padding: 20px;
+  }
+  
+  /* 🔹 Login Box */
+  .login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* 🔹 Title */
+  .login-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* 🔹 Profile Picture */
+  .profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 🔹 Error & Success Messages */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .success-message {
+    color: green;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* 🔹 Input Fields */
+  .login-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .login-input:focus {
+    border: 1px solid #4facfe;
+  }
+  
+  /* 🔹 Checkbox (Remember Me) */
+  .login-checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .login-checkbox input {
+    margin-right: 8px;
+  }
+  
+  /* 🔹 Buttons */
+  .login-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #4facfe;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background: #3a92e3;
+  }
+  
+  /* 🔹 Forgot Password */
+  .forgot-password {
+    color: #007bff;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  /* 🔹 Signup / Switch Mode */
+  .switch-text {
+    font-size: 14px;
+    margin-top: 15px;
+    color: #333;
+  }
+  
+  .switch-button {
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .switch-button:hover {
+    text-decoration: underline;
+  }
+  
+  /* 🔹 Google Login Button */
+  .google-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #db4437;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .google-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  
+  .google-button:hover {
+    background: #b33a2f;
+  }
+  
+  /* 🔹 Responsive Design */
+  @media (max-width: 480px) {
+    .login-box {
+      padding: 20px;
+    }
+    
+    .login-title {
+      font-size: 22px;
+    }
+  
+    .login-input {
+      font-size: 14px;
+    }
+  
+    .login-button, .google-button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  

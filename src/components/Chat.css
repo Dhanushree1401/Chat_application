@@ -1,0 +1,232 @@
+/* Full-Screen Chat Container */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full screen height */
+    width: 100vw; /* Full screen width */
+    background: linear-gradient(to bottom, #ece5dd, #d1e7dd);
+    overflow: hidden;
+  }
+  
+  /* Chat Header - WhatsApp Style */
+  .chat-header {
+    background-color: #075E54;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logout-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .logout-btn:hover {
+    background: darkred;
+  }
+  
+  /* Room Selector */
+  .room-selector {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .room-selector select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #075E54;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  /* Chat Messages Area */
+  .chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Individual Message Bubbles */
+  .message {
+    display: flex;
+    align-items: center;
+    max-width: 75%;
+    margin-bottom: 12px;
+    word-wrap: break-word;
+  }
+  
+  .sent {
+    justify-content: flex-end;
+  }
+  
+  .received {
+    justify-content: flex-start;
+  }
+  
+  /* Profile Picture */
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Message Content */
+  .message-content {
+    padding: 12px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  /* Sent Messages - Green */
+  .sent .message-content {
+    background: #DCF8C6;
+    color: black;
+    border-bottom-right-radius: 2px;
+  }
+  
+  /* Received Messages - White */
+  .received .message-content {
+    background: white;
+    color: black;
+    border-bottom-left-radius: 2px;
+  }
+  
+  /* Seen & Sent Icons */
+  .seen-icon {
+    font-size: 12px;
+    color: blue;
+    margin-left: 5px;
+  }
+  
+  .sent-icon {
+    font-size: 12px;
+    color: gray;
+    margin-left: 5px;
+  }
+  
+  /* Typing Indicator */
+  .typing-indicator {
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 5px;
+  }
+  
+  /* Chat Input Section */
+  .chat-input {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background: white;
+    border-top: 1px solid #ccc;
+  }
+  
+  .chat-input input {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    margin: 0 8px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .chat-input input:focus {
+    border: 1px solid #075E54;
+  }
+  
+  /* Send & Voice Buttons */
+  .send-btn, .voice-btn {
+    background: #25D366;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .voice-btn {
+    background: #128C7E;
+    margin-right: 5px;
+  }
+  
+  .send-btn:hover, .voice-btn:hover {
+    background: #1aa75d;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) { /* Tablets & Small Screens */
+    .chat-container {
+      width: 100%;
+    }
+  
+    .chat-header {
+      font-size: 16px;
+    }
+  
+    .room-selector select {
+      font-size: 12px;
+    }
+  
+    .chat-input input {
+      font-size: 12px;
+      padding: 10px;
+    }
+  
+    .send-btn, .voice-btn {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) { /* Mobile Screens */
+    .chat-container {
+      width: 100%;
+    }
+  
+    .chat-header {
+      font-size: 14px;
+      padding: 12px;
+    }
+  
+    .profile-pic {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .message-content {
+      font-size: 12px;
+      padding: 10px;
+    }
+  
+    .chat-input input {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .send-btn, .voice-btn {
+      padding: 8px;
+    }
+  }
+  
